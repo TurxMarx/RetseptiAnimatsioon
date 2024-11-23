@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fleur+De+Leah&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    }
+
+.ingredients {
+    border:  1px solid grey;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    }
+
+    .ingredients-table {
+    border: 1px solid black;
+    margin: 0 auto;
+    color: blue;
+    position: relative;
+    animation: ingredients-table;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: infinite*/
+   }
+
+   @keyframes ingredients-table {
+    0% {top: -250px}
+    100% {top: 5px}
+}
+
+.instructions {
+    border: 1px solid grey;
+    width: 50%;
+    margin: 0 auto;
+    color: brown;
+}
+
+.instructions h2 {
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Fleur De Leah", cursive;
+    width: 80%;
+    position: relative;
+    animation: textLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+
+.instructions ol {
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 75%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    position: relative;
+    animation: forwards;
+    animation: img;
+    animation-duration: 4s;
+}
+
+@keyframes img {
+    0% {bottom: -250px}
+    100% {bottom: 1px}
+}
+
+
+
+.footer p {
+    color: grey;
+    font-family: "Caveat", cursive;
+}
